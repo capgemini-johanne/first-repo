@@ -9,122 +9,211 @@
 </head>
 
 <body>
-    <section>
-        <h1>Welcome to MEMO GIT !</h1>
-    </section>
+    <header>
+        <h1>Bienvenue sur le MEMO d'utilisation de GIT !</h1>
+    </header>
+    <main>
+        <section>
+            <header>
+                <h2>Les bases</h2>
+            </header>
 
-    <section>
-        <h2>Installation de Git depuis le <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">site officiel</a>.</h2>
-    </section>
+            <article>
+                <header>
+                    <h3>Installation</h3>
+                </header>
+                <p>C'est par <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">ici</a> !</p>
+            </article>
 
-    <section>
-        <h2>Configuration de Git</h2>
-        <article>
-            <h2>Activation des couleurs</h2>
-            <code>$ git config --global color.ui true</code>
-        </article>
-        <article>
-            <h2>Identification de l'utilisateur</h2>
-            <code>$ git config --global user.name username</code>
-            <code>$ git config --global user.email me@mail.com</code>
-        </article>
-        <footer>
-            <p>NB : Ces actions entraîneront la création d'un fichier .gitconfig à la racine du dossier utilisateur.</p>
-        </footer>
-    </section>
+            <article>
+                <header>
+                    <h3>Configuration</h3>
+                </header>
+                <div>
+                    <div>
+                        <h4>Activation des couleurs</h4>
+                        <code>$ git config --global color.ui true</code>
+                    </div>
+                    <div>
+                        <h4>Identification de l'utilisateur</h4>
+                        <code>$ git config --global user.name username</code>
+                        <code>$ git config --global user.email me@mail.com</code>
+                    </div>
+                </div>
+                <footer>
+                    <p>NB : Ces actions entraîneront la création d'un fichier .gitconfig à la racine du dossier utilisateur.</p>
+                </footer>
+            </article>
 
-    <section>
-        <h2>Initialiser Git sur un projet</h2>
-        <code>$ git init</code>
-        <footer>
-            <p>NB : Cette action entraînera la création d'un dossier .git.</p>
-        </footer>
-    </section>
+            <article>
+                <header>
+                    <h3>Initialiser Git sur un projet</h3>
+                </header>
+                <code>$ git init</code>
+                <footer>
+                    <p>NB : Cette action entraînera la création d'un dossier .git.</p>
+                </footer>
+            </article>
 
-    <section>
-        <h2>Faire un état des lieux du projet</h2>
-        <code>$ git status</code>
-    </section>
+            <article>
+                <header>
+                    <h3>Faire un état des lieux du projet</h3>
+                </header>
+                <code>$ git status</code>
+            </article>
 
-    <section>
-        <h2>Obtenir le journal des actions du projet</h2>
-        <code>$ git log</code>
-    </section>
+            <article>
+                <header>
+                    <h3>Obtenir le journal des actions du projet</h3>
+                </header>
+                <code>$ git log</code>
+            </article>
 
-    <section>
-        <h2>Sauvegarder le travail</h2>
-        <article>
-            <h2>Sélectionner le(s) fichier(s) à enregistrer</h2>
-            <code>$ git add filename</code>
-        </article>
-        <article>
-            <h2>Enregistrer les fichiers</h2>
-            <code>$ git commit -m "init project"</code>
-        </article>
-        <footer>
-            <p>NB : Il est possible d'utiliser le wildcard '*'.</p>
-        </footer>
-    </section>
 
-    <section>
-        <h2>Créer une branche</h2>
-        <code>$ git branch branchname</code>
-        <footer>
-            <p>NB : Il est conseillé de créer une branche par fonctionnalité.</p>
-        </footer>
-    </section>
+            <article>
+                <header>
+                    <h3>Sauvegarder le travail</h3>
+                </header>
+                <div>
+                    <div>
+                        <h4>Sélectionner le(s) fichier(s) à enregistrer</h4>
+                        <code>$ git add filename</code>
+                    </div>
+                    <div>
+                        <h4>Enregistrer le(s) fichier(s)</h4>
+                        <code>$ git commit -m "init project"</code>
+                    </div>
+                </div>
+                <footer>
+                    <p>NB : Il est possible d'utiliser le wildcard '*'.</p>
+                </footer>
+            </article>
+        </section>
 
-    <section>
-        <h2>Lister les branches</h2>
-        <code>$ git branch</code>
-    </section>
+        <section>
+            <header>
+                <h2>Les branches</h2>
+            </header>
 
-    <section>
-        <h2>Changer de branche</h2>
-        <code>$ git checkout branchname</code>
-    </section>
+            <article>
+                <header>
+                    <h3>Créer une branche</h3>
+                </header>
+                <code>$ git branch branchname</code>
+                <footer>
+                    <p>NB : Il est conseillé de créer une branche par fonctionnalité.</p>
+                </footer>
+            </article>
 
-    <section>
-        <h2>Fusionner une branche avec la branche principale</h2>
-        <article>
-            <h2>Se positionner dans la branche qui va recevoir le travail effectué</h2>
-            <code>$ git checkout oldbranchname</code>
-        </article>
-        <article>
-            <h2>Fusionner les travaux des deux branches</h2>
-            <code>$ git merge newbranchname</code>
-        </article>
-        <article>
-            <h2>Supprimer la branche qui ne sera plus utilisée (facultatif)</h2>
-            <code>$ git branch -d newbranchname</code>
-        </article>
-        <footer>
-            <p>NB : Il est possible d'utiliser le wildcard '*'.</p>
-        </footer>
-    </section>
+            <article>
+                <header>
+                    <h3>Lister les branches</h3>
+                </header>
+                <code>$ git branch</code>
+            </article>
 
-    <h2>Collaborer sur un projet avec Github (dépôt distant)</h2>
-    <section>
-        <h2>Créer un repository</h2>
-        <p>Choisir un nom et une desciption... puis créer !</p>
-    </section>
 
-    <section>
-        <h2>Associer le repository au dossier local</h2>
-        <code>$ git remote add origin urlduprojetgithub</code>
-    </section>
+            <article>
+                <header>
+                    <h3>Changer de branche</h3>
+                </header>
+                <code>$ git checkout branchname</code>
+            </article>
 
-    <section>
-        <h2>Vérifier les dépôts distants du projet</h2>
-        <code>$ git remote</code>
-    </section>
+            <article>
+                <header>
+                    <h3>Fusionner une branche avec la branche principale</h3>
+                </header>
+                <div>
+                    <div>
+                        <h4>Se positionner dans la branche qui va recevoir le travail effectué</h4>
+                        <code>$ git checkout oldbranchname</code>
+                    </div>
+                    <div>
+                        <h4>Fusionner les travaux des deux branches</h4>
+                        <code>$ git merge newbranchname</code>
+                    </div>
+                    <div>
+                        <h4>Supprimer la branche qui ne sera plus utilisée (facultatif)</h4>
+                        <code>$ git branch -d newbranchname</code>
+                    </div>
+                </div>
+            </article>
+        </section>
 
-    <section>
-        <h2>Déposer les sources sur le repository</h2>
-        <code>$ git push origin master</code>
-        <p>origin = label du dépôt</p>
-        <p>master = nom de la branche</p>
-    </section>
+        <section>
+            <header>
+                <h2>GitHub (dépôt distant)</h2>
+            </header>
+
+            <article>
+                <header>
+                    <h3>Créer un repository</h3>
+                </header>
+                <ul>
+                    <li>Se connecter/s'incrire</li>
+                    <li>Your repositories</li>
+                    <li>New</li>
+                    <li>Choisir un nom</li>
+                    <li>Create repository</li>
+                </ul>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Donner les accès aux sources du repository</h3>
+                </header>
+                <ul>
+                    <li>Settings (du repository)</li>
+                    <li>Manage access</li>
+                    <li>Invite a collaborator</li>
+                    <li>REchercher l'utilisateur de GitHub</li>
+                    <li>Add username to reponame</li>
+                </ul>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Associer le repository au dossier local</h3>
+                </header>
+                <code>$ git remote add origin urlduprojetgithub</code>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Vérifier les dépôts distants du projet</h3>
+                </header>
+                <code>$ git remote</code>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Associer un dossier local au repository (se brancher)</h3>
+                </header>
+                <code>$ git remote add origin urlduprojetgithub</code>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Déposer les sources sur le repository</h3>
+                </header>
+                <code>$ git push origin master</code>
+                <footer>
+                    <p>NB : "origin" = label du dépôt - "master" = nom de la branche - ajouter "-f" si ça ne fonctionne pas</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Récupérer les sources du repository</h3>
+                </header>
+                <code>$ git pull origin master</code>
+                <footer>
+                    <p>NB : "origin" = label du dépôt - "master" = nom de la branche - ajouter "-f" si ça ne fonctionne pas</p>
+                </footer>
+            </article>
+        </section>
+    </main>
 </body>
 
 </html>
