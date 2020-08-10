@@ -9,23 +9,23 @@
 </head>
 
 <body>
-    <header>
+    <header class="fxColumn">
         <h1>Bienvenue sur le MEMO d'utilisation de GIT !</h1>
     </header>
     <main>
         <section>
-            <header>
+            <header class="fxColumn">
                 <h2>Les bases</h2>
             </header>
 
-            <article>
+            <article class="fxColumn" id="install">
                 <header>
                     <h3>Installation</h3>
                 </header>
                 <p>C'est par <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">ici</a> !</p>
             </article>
 
-            <article>
+            <article class="fxColumn" id="config">
                 <header>
                     <h3>Configuration</h3>
                 </header>
@@ -36,7 +36,7 @@
                     </div>
                     <div>
                         <h4>Identification de l'utilisateur</h4>
-                        <code>$ git config --global user.name username</code>
+                        <code>$ git config --global user.name userName</code>
                         <code>$ git config --global user.email me@mail.com</code>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                 </footer>
             </article>
 
-            <article>
+            <article class="fxColumn" id="init">
                 <header>
                     <h3>Initialiser Git sur un projet</h3>
                 </header>
@@ -55,22 +55,21 @@
                 </footer>
             </article>
 
-            <article>
+            <article class="fxColumn" id="status">
                 <header>
                     <h3>Faire un état des lieux du projet</h3>
                 </header>
                 <code>$ git status</code>
             </article>
 
-            <article>
+            <article class="fxColumn" id="log">
                 <header>
                     <h3>Obtenir le journal des actions du projet</h3>
                 </header>
                 <code>$ git log</code>
             </article>
 
-
-            <article>
+            <article class="fxColumn" id="add">
                 <header>
                     <h3>Sauvegarder le travail</h3>
                 </header>
@@ -91,11 +90,11 @@
         </section>
 
         <section>
-            <header>
+            <header class="fxColumn">
                 <h2>Les branches</h2>
             </header>
 
-            <article>
+            <article class="fxColumn" id="branch">
                 <header>
                     <h3>Créer une branche</h3>
                 </header>
@@ -105,22 +104,21 @@
                 </footer>
             </article>
 
-            <article>
+            <article class="fxColumn" id="branch-list">
                 <header>
                     <h3>Lister les branches</h3>
                 </header>
                 <code>$ git branch</code>
             </article>
 
-
-            <article>
+            <article class="fxColumn" id="checkout">
                 <header>
                     <h3>Changer de branche</h3>
                 </header>
                 <code>$ git checkout branchname</code>
             </article>
 
-            <article>
+            <article class="fxColumn" id="merge">
                 <header>
                     <h3>Fusionner une branche avec la branche principale</h3>
                 </header>
@@ -142,11 +140,11 @@
         </section>
 
         <section>
-            <header>
+            <header class="fxColumn">
                 <h2>GitHub (dépôt distant)</h2>
             </header>
 
-            <article>
+            <article class="fxColumn" id="repo-new">
                 <header>
                     <h3>Créer un repository</h3>
                 </header>
@@ -159,7 +157,7 @@
                 </ul>
             </article>
 
-            <article>
+            <article class="fxColumn" id="repo-access">
                 <header>
                     <h3>Donner les accès aux sources du repository</h3>
                 </header>
@@ -172,28 +170,28 @@
                 </ul>
             </article>
 
-            <article>
+            <article class="fxColumn" id="repo-add">
                 <header>
                     <h3>Associer le repository au dossier local</h3>
                 </header>
                 <code>$ git remote add origin urlduprojetgithub</code>
             </article>
 
-            <article>
+            <article class="fxColumn" id="remote">
                 <header>
                     <h3>Vérifier les dépôts distants du projet</h3>
                 </header>
                 <code>$ git remote</code>
             </article>
 
-            <article>
+            <article class="fxColumn" id="repo-add-again">
                 <header>
                     <h3>Associer un dossier local au repository (se brancher)</h3>
                 </header>
                 <code>$ git remote add origin urlduprojetgithub</code>
             </article>
 
-            <article>
+            <article class="fxColumn" id="push">
                 <header>
                     <h3>Déposer les sources sur le repository</h3>
                 </header>
@@ -203,7 +201,7 @@
                 </footer>
             </article>
 
-            <article>
+            <article class="fxColumn" id="pull">
                 <header>
                     <h3>Récupérer les sources du repository</h3>
                 </header>

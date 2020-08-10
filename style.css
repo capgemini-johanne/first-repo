@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    background-color: #e0e0e0;
+}
+
+body > header,
+section {
+    min-height: 100vh;
+}
+
+body > header {
+    background-color: whitesmoke;
+}
+
+section > header {
+    min-height: 25vh;
+}
+
+article {
+    min-height: 50vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+code {
+    width: fit-content;
+    margin: auto;
+    background-color: black;
+    padding: 1em;
+    border-radius: 0.75em;
+    color: blanchedalmond;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fxColumn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+}
+
+article > footer {
+    margin-top: 10vh;
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+#install {
+    background-color: #e57373;
+}
+#config {
+    background-color: #f06292;
+}
+#init {
+    background-color: #ba68c8;
+}
+#status {
+    background-color: #9575cd;
+}
+#log {
+    background-color: #7986cb;
+}
+#add {
+    background-color: #64b5f6;
+}
+#branch {
+    background-color: #4fc3f7;
+}
+#branch-list {
+    background-color: #4dd0e1;
+}
+#checkout {
+    background-color: #4db6ac;
+}
+#merge {
+    background-color: #81c784;
+}
+#repo-new {
+    background-color: #aed581;
+}
+#repo-access {
+    background-color: #dce775;
+}
+#repo-add {
+    background-color: #fff176;
+}
+#remote {
+    background-color: #ffd54f;
+}
+#repo-add-again {
+    background-color: #ffb74d;
+}
+#push {
+    background-color: #ff8a65;
+}
+#pull {
+    background-color: #a1887f;
+}
