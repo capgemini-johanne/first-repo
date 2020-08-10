@@ -23,27 +23,32 @@ section {
 }
 
 section:nth-child(1),
-section:nth-child(6) {
+section:nth-child(6),
+section:nth-child(11) {
     background-color: var(--back-cotton-candy);
 }
 
 section:nth-child(2),
-section:nth-child(7) {
+section:nth-child(7),
+section:nth-child(12) {
     background-color: var(--back-mauve);
 }
 
 section:nth-child(3),
-section:nth-child(8) {
+section:nth-child(8),
+section:nth-child(13) {
     background-color: var(--back-lavender-floral);
 }
 
 section:nth-child(4),
-section:nth-child(9) {
+section:nth-child(9),
+section:nth-child(14) {
     background-color: var(--back-cornflower-blue);
 }
 
 section:nth-child(5),
-section:nth-child(10) {
+section:nth-child(10),
+section:nth-child(15) {
     background-color: var(--back-vivid-sky-blue);
 }
 

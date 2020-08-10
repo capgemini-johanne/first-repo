@@ -21,12 +21,12 @@
         <h2>Configuration de Git</h2>
         <article>
             <h2>Activation des couleurs</h2>
-            <pre>$ git config --global color.ui true</pre>
+            <code>$ git config --global color.ui true</code>
         </article>
         <article>
             <h2>Identification de l'utilisateur</h2>
-            <pre>$ git config --global user.name username</pre>
-            <pre>$ git config --global user.email me@mail.com</pre>
+            <code>$ git config --global user.name username</code>
+            <code>$ git config --global user.email me@mail.com</code>
         </article>
         <footer>
             <p>NB : Ces actions entraîneront la création d'un fichier .gitconfig à la racine du dossier utilisateur.</p>
@@ -35,7 +35,7 @@
 
     <section>
         <h2>Initialiser Git sur un projet</h2>
-        <pre>$ git init</pre>
+        <code>$ git init</code>
         <footer>
             <p>NB : Cette action entraînera la création d'un dossier .git.</p>
         </footer>
@@ -43,23 +43,23 @@
 
     <section>
         <h2>Faire un état des lieux du projet</h2>
-        <pre>$ git status</pre>
+        <code>$ git status</code>
     </section>
 
     <section>
         <h2>Obtenir le journal des actions du projet</h2>
-        <pre>$ git log</pre>
+        <code>$ git log</code>
     </section>
 
     <section>
         <h2>Sauvegarder le travail</h2>
         <article>
             <h2>Sélectionner le(s) fichier(s) à enregistrer</h2>
-            <pre>$ git add filename</pre>
+            <code>$ git add filename</code>
         </article>
         <article>
             <h2>Enregistrer les fichiers</h2>
-            <pre>$ git commit -m "init project"</pre>
+            <code>$ git commit -m "init project"</code>
         </article>
         <footer>
             <p>NB : Il est possible d'utiliser le wildcard '*'.</p>
@@ -68,7 +68,7 @@
 
     <section>
         <h2>Créer une branche</h2>
-        <pre>$ git branch branchname</pre>
+        <code>$ git branch branchname</code>
         <footer>
             <p>NB : Il est conseillé de créer une branche par fonctionnalité.</p>
         </footer>
@@ -76,31 +76,47 @@
 
     <section>
         <h2>Lister les branches</h2>
-        <pre>$ git branch</pre>
+        <code>$ git branch</code>
     </section>
 
     <section>
         <h2>Changer de branche</h2>
-        <pre>$ git checkout branchname</pre>
+        <code>$ git checkout branchname</code>
     </section>
 
     <section>
         <h2>Fusionner une branche avec la branche principale</h2>
         <article>
             <h2>Se positionner dans la branche qui va recevoir le travail effectué</h2>
-            <pre>$ git checkout oldbranchname</pre>
+            <code>$ git checkout oldbranchname</code>
         </article>
         <article>
             <h2>Fusionner les travaux des deux branches</h2>
-            <pre>$ git merge newbranchname</pre>
+            <code>$ git merge newbranchname</code>
         </article>
         <article>
             <h2>Supprimer la branche qui ne sera plus utilisée (facultatif)</h2>
-            <pre>$ git branch -d newbranchname</pre>
+            <code>$ git branch -d newbranchname</code>
         </article>
         <footer>
             <p>NB : Il est possible d'utiliser le wildcard '*'.</p>
         </footer>
+    </section>
+
+    <h2>Collaborer sur un projet avec Github (dépôt distant)</h2>
+    <section>
+        <h2>Créer un repository</h2>
+        <p>Choisir un nom et une desciption... puis créer !</p>
+    </section>
+
+    <section>
+        <h2>Associer le repository au dossier local</h2>
+        <code>$ git remote add origin urlduprojetgithub</code>
+    </section>
+
+    <section>
+        <h2>Vérifier les dépôts distants du projet</h2>
+        <code>$ git remote</code>
     </section>
 </body>
 
