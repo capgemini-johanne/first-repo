@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMO GIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1>Welcome to MEMO GIT !</h1>
+    </section>
+
+    <section>
+        <h2>Installation de Git depuis le <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">site officiel</a>.</h2>
+    </section>
+
+    <section>
+        <h2>Configuration de Git</h2>
+        <article>
+            <h2>Activation des couleurs</h2>
+            <pre>$ git config --global color.ui true</pre>
+        </article>
+        <article>
+            <h2>Identification de l'utilisateur</h2>
+            <pre>$ git config --global user.name username</pre>
+            <pre>$ git config --global user.email me@mail.com</pre>
+        </article>
+        <footer>
+            <p class="info">NB : Ces actions entraîneront la création d'un fichier .gitconfig à la racine du dossier utilisateur.</p>
+        </footer>
+    </section>
+
+    <section>
+        <h2>Initialiser Git sur un projet</h2>
+        <pre>$ git init</pre>
+        <footer>
+            <p class="info">NB : Cette action entraînera la création d'un dossier .git.</p>
+        </footer>
+    </section>
+
+    <section>
+        <h2>Faire un état des lieux du projet</h2>
+        <pre>$ git status</pre>
+    </section>
+
+    <section>
+        <h2>Sauvegarder le travail</h2>
+        <article>
+            <h2>Sélectionner le(s) fichier(s) à enregistrer</h2>
+            <pre>$ git add filename</pre>
+        </article>
+        <article>
+            <h2>Enregistrer les fichiers</h2>
+            <pre>$ git commint -m "init project"</pre>
+        </article>
+        <footer>
+            <p class="info">NB : Il est possible d'utiliser '*'.</p>
+        </footer>
+    </section>
+</body>
+
+</html>
