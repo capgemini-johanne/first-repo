@@ -83,6 +83,25 @@
         <h2>Changer de branche</h2>
         <pre>$ git checkout branchname</pre>
     </section>
+
+    <section>
+        <h2>Fusionner une branche avec la branche principale</h2>
+        <article>
+            <h2>Se positionner dans la branche qui va recevoir le travail effectué</h2>
+            <pre>$ git checkout oldbranchname</pre>
+        </article>
+        <article>
+            <h2>Fusionner les travaux des deux branches</h2>
+            <pre>$ git merge newbranchname</pre>
+        </article>
+        <article>
+            <h2>Supprimer la branche qui ne sera plus utilisée (facultatif)</h2>
+            <pre>$ git branch -d newbranchname</pre>
+        </article>
+        <footer>
+            <p>NB : Il est possible d'utiliser le wildcard '*'.</p>
+        </footer>
+    </section>
 </body>
 
 </html>
