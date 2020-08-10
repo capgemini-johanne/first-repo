@@ -27,19 +27,23 @@ section:nth-child(6) {
     background-color: var(--back-cotton-candy);
 }
 
-section:nth-child(2) {
+section:nth-child(2),
+section:nth-child(7) {
     background-color: var(--back-mauve);
 }
 
-section:nth-child(3) {
+section:nth-child(3),
+section:nth-child(8) {
     background-color: var(--back-lavender-floral);
 }
 
-section:nth-child(4) {
+section:nth-child(4),
+section:nth-child(9) {
     background-color: var(--back-cornflower-blue);
 }
 
-section:nth-child(5) {
+section:nth-child(5),
+section:nth-child(10) {
     background-color: var(--back-vivid-sky-blue);
 }
 
@@ -53,7 +57,7 @@ a {
     text-decoration: none;
 }
 
-.info {
+section > footer p {
     font-size: 0.8em;
     font-style: italic;
 }
