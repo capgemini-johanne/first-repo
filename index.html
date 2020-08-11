@@ -4,152 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Memo for how to use git and github">
     <title>MEMO GIT</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#f5f5f5">
+    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#f5f5f5">
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
-    <header class="fxColumn">
+    <header>
         <h1>Bienvenue sur le MEMO d'utilisation de GIT !</h1>
     </header>
     <main>
         <section>
-            <header class="fxColumn">
+            <header>
                 <h2>Les bases</h2>
             </header>
 
-            <article class="fxColumn" id="install">
+            <article>
                 <header>
                     <h3>Installation</h3>
                 </header>
                 <p>C'est par <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">ici</a> !</p>
             </article>
 
-            <article class="fxColumn" id="config">
+            <article>
                 <header>
-                    <h3>Configuration</h3>
+                    <h3>Configuration et création du fichier .gitconfig</h3>
                 </header>
-                <div>
-                    <div>
-                        <h4>Activation des couleurs</h4>
-                        <code>$ git config --global color.ui true</code>
-                    </div>
-                    <div>
-                        <h4>Identification de l'utilisateur</h4>
-                        <code>$ git config --global user.name userName</code>
-                        <code>$ git config --global user.email me@mail.com</code>
-                    </div>
-                </div>
-                <footer>
-                    <p>NB : Ces actions entraîneront la création d'un fichier .gitconfig à la racine du dossier utilisateur.</p>
-                </footer>
+                <h4>Activation des couleurs</h4>
+                <img src="images/base-section/config-color.png" alt="git config --global color.ui true">
+                <h4>Identification de l'utilisateur</h4>
+                <img src="images/base-section/config-user-name.png" alt="git config --global user.name">
+                <img src="images/base-section/config-user-mail.png" alt="git config --global user.email">
             </article>
 
-            <article class="fxColumn" id="init">
+            <article>
                 <header>
-                    <h3>Initialiser Git sur un projet</h3>
+                    <h3>Initialisation de Git sur un projet et création du dossier .git</h3>
                 </header>
-                <code>$ git init</code>
-                <footer>
-                    <p>NB : Cette action entraînera la création d'un dossier .git.</p>
-                </footer>
+                <img src="images/base-section/init.png" alt="git init">
             </article>
 
-            <article class="fxColumn" id="status">
+            <article>
                 <header>
                     <h3>Faire un état des lieux du projet</h3>
                 </header>
-                <code>$ git status</code>
+                <img src="images/base-section/status.png" alt="git status">
             </article>
 
-            <article class="fxColumn" id="log">
+            <article>
                 <header>
                     <h3>Obtenir le journal des actions du projet</h3>
                 </header>
-                <code>$ git log</code>
+                <img src="images/base-section/log.png" alt="git log">
             </article>
 
-            <article class="fxColumn" id="add">
+            <article>
                 <header>
                     <h3>Sauvegarder le travail</h3>
                 </header>
-                <div>
-                    <div>
-                        <h4>Sélectionner le(s) fichier(s) à enregistrer</h4>
-                        <code>$ git add filename</code>
-                    </div>
-                    <div>
-                        <h4>Enregistrer le(s) fichier(s)</h4>
-                        <code>$ git commit -m "init project"</code>
-                    </div>
-                </div>
-                <footer>
-                    <p>NB : Il est possible d'utiliser le wildcard '*'.</p>
-                </footer>
+                <h4>Sélectionner le(s) fichier(s) à enregistrer</h4>
+                <img src="images/base-section/add.png" alt="git add">
+                <h4>Enregistrer le(s) fichier(s)</h4>
+                <img src="images/base-section/commit.png" alt="git commit">
             </article>
         </section>
 
         <section>
-            <header class="fxColumn">
+            <header>
                 <h2>Les branches</h2>
             </header>
 
-            <article class="fxColumn" id="branch">
+            <article>
                 <header>
                     <h3>Créer une branche</h3>
                 </header>
-                <code>$ git branch branchname</code>
-                <footer>
-                    <p>NB : Il est conseillé de créer une branche par fonctionnalité.</p>
-                </footer>
+                <img src="images/branch-section/add.png" alt="git branch branchname">
             </article>
 
-            <article class="fxColumn" id="branch-list">
+            <article>
                 <header>
                     <h3>Lister les branches</h3>
                 </header>
-                <code>$ git branch</code>
+                <img src="images/branch-section/branch.png" alt="git branch">
             </article>
 
-            <article class="fxColumn" id="checkout">
+            <article>
                 <header>
                     <h3>Changer de branche</h3>
                 </header>
-                <code>$ git checkout branchname</code>
+                <img src="images/branch-section/checkout.png" alt="git checkout branchname">
+
             </article>
 
-            <article class="fxColumn" id="merge">
+            <article>
                 <header>
                     <h3>Fusionner une branche avec la branche principale</h3>
                 </header>
-                <div>
-                    <div>
-                        <h4>Se positionner dans la branche qui va recevoir le travail effectué</h4>
-                        <code>$ git checkout oldbranchname</code>
-                    </div>
-                    <div>
-                        <h4>Fusionner les travaux des deux branches</h4>
-                        <code>$ git merge newbranchname</code>
-                    </div>
-                    <div>
-                        <h4>Supprimer la branche qui ne sera plus utilisée (facultatif)</h4>
-                        <code>$ git branch -d newbranchname</code>
-                    </div>
-                </div>
+                <h4>Se positionner dans la branche qui va recevoir le travail effectué</h4>
+                <img src="images/branch-section/checkout-old.png" alt="git checkout oldbranchname">
+                <h4>Fusionner les travaux des deux branches</h4>
+                <img src="images/branch-section/merge.png" alt="git merge newbranchname">
+                <h4>Supprimer la branche qui ne sera plus utilisée (facultatif)</h4>
+                <img src="images/branch-section/delete.png" alt="git branch -d newbranchname">
             </article>
         </section>
 
         <section>
-            <header class="fxColumn">
+            <header>
                 <h2>GitHub (dépôt distant)</h2>
             </header>
 
-            <article class="fxColumn" id="repo-new">
+            <article>
                 <header>
                     <h3>Créer un repository</h3>
                 </header>
                 <ul>
-                    <li>Se connecter/s'incrire</li>
+                    <li>Sign in/Sign up</li>
                     <li>Your repositories</li>
                     <li>New</li>
                     <li>Choisir un nom</li>
@@ -157,7 +147,7 @@
                 </ul>
             </article>
 
-            <article class="fxColumn" id="repo-access">
+            <article>
                 <header>
                     <h3>Donner les accès aux sources du repository</h3>
                 </header>
@@ -165,53 +155,53 @@
                     <li>Settings (du repository)</li>
                     <li>Manage access</li>
                     <li>Invite a collaborator</li>
-                    <li>REchercher l'utilisateur de GitHub</li>
-                    <li>Add username to reponame</li>
+                    <li>Search by username, full name, or email</li>
+                    <li>Add username to repository</li>
                 </ul>
             </article>
 
-            <article class="fxColumn" id="repo-add">
+            <article>
                 <header>
-                    <h3>Associer le repository au dossier local</h3>
+                    <h3>Associer le repository au dossier local ou inversement</h3>
                 </header>
-                <code>$ git remote add origin urlduprojetgithub</code>
+                <img src="images/github-section/add.png" alt="git remote add origin urlduprojetgithub">
+                <footer>
+                    <p>NB : "origin" = label du dépôt</p>
+                </footer>
             </article>
 
-            <article class="fxColumn" id="remote">
+            <article id="remote">
                 <header>
                     <h3>Vérifier les dépôts distants du projet</h3>
                 </header>
-                <code>$ git remote</code>
+                <img src="images/github-section/list.png" alt="git remote">
             </article>
 
-            <article class="fxColumn" id="repo-add-again">
-                <header>
-                    <h3>Associer un dossier local au repository (se brancher)</h3>
-                </header>
-                <code>$ git remote add origin urlduprojetgithub</code>
-            </article>
-
-            <article class="fxColumn" id="push">
+            <article id="push">
                 <header>
                     <h3>Déposer les sources sur le repository</h3>
                 </header>
-                <code>$ git push origin master</code>
+                <img src="images/github-section/push.png" alt="git push origin master">
                 <footer>
                     <p>NB : "origin" = label du dépôt - "master" = nom de la branche - ajouter "-f" si ça ne fonctionne pas</p>
                 </footer>
             </article>
 
-            <article class="fxColumn" id="pull">
+            <article id="pull">
                 <header>
                     <h3>Récupérer les sources du repository</h3>
                 </header>
-                <code>$ git pull origin master</code>
+                <img src="images/github-section/pull.png" alt="git pull origin master">
                 <footer>
                     <p>NB : "origin" = label du dépôt - "master" = nom de la branche - ajouter "-f" si ça ne fonctionne pas</p>
                 </footer>
             </article>
         </section>
     </main>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="main.js"></script>
+
 </body>
 
 </html>
